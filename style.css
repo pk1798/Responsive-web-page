@@ -59,6 +59,7 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
+
 /* colors */
 
 .blue{
@@ -226,6 +227,25 @@ body{
     margin-bottom: 20px;
 }
 
+.none{
+    display: none;
+}
+
+.menu-res{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+
+.show{
+    display: block;
+}
+
 /* ************ layout ************ */
 *{
     margin: 0;
@@ -278,8 +298,17 @@ section{
 
 /* navbar */
 
+nav{
+    flex-wrap: wrap;
+}
+
 .navbar__toggle{
     display: none;
+    width: 10%;
+}
+
+.navbar__logo{
+    width: 90%;
 }
 
 .navbar__menu{
@@ -456,6 +485,19 @@ form svg{
         --line-height-4: 1.07;
     
     }
+    .featured{
+        font-size: var(--font-size-sm);
+        background-color: var(--color-yellow);
+        width: 80px;
+        padding: 3px 15px 4px;
+        border-radius: 13.5px;
+        margin-left: 60px;
+        text-align: center;
+        font-size: 12px;
+        border: none;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
 
     .font-res-sm{
         font-size: var(--font-size-sm-res);
@@ -508,7 +550,22 @@ form svg{
         background-image: url('./images/photo-4@3x.png');
         height: 264px;
     }
+
     
+    .links__container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+    .links__container div a{
+        display: inline;
+    }
+    .links__container div p{
+        display: inline;
+    }
+
+        
     .res-blue{
         color: var(--color-blue);
     }
