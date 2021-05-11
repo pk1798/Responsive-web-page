@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive web page task created for internship program at full creative">
     <title>Responsive web page</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <div class="container margin-auto">
         <header>
             <!-- navbar -->
@@ -22,18 +24,27 @@
                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                     </svg>
                 </div>
-                <div class="navbar__menu flex-between width-2 font-sm bold-xl ls-3" id="nav-list">
-                    <h4>WORKS</h4>
-                    <h4>ABOUT</h4>
+                <div class="navbar__menu flex-between width-2 font-sm bold-xl ls-3">
+                    <p>WORKS</p>
+                    <p>ABOUT</p>
                 </div>
                 <div class="navbar__logo width-11 text-center">
-                    <img src="./images/nav-image-png.png" width="52px" height="52px" alt="" style="border-radius: 50%;">
+                    <img src="./images/nav-image-png.png" width="52" height="52" alt="nav-icon" style="border-radius: 50%;">
                 </div>
-                <div class="navbar__menu flex-between width-2 font-sm bold-xl ls-3" id="nav-list">
-                    <h4>LINKS</h4>
-                    <h4>CONTACTS</h4>
+                <div class="navbar__menu flex-between width-2 font-sm bold-xl ls-3">
+                    <p>LINKS</p>
+                    <p>CONTACTS</p>
+                </div>
+                <div id="nav-list" class="hide">
+                    <div class="menu-res">
+                        <p>WORKS</p>
+                        <p>ABOUT</p>
+                        <p>LINKS</p>
+                        <p>CONTACTS</p>
+                    </div>
                 </div>
             </nav>
+
             <!-- page bio -->
             <div class="bio mb-5">
                 <div class="mb-2">
@@ -45,48 +56,48 @@
                 </div>
 
                 <div class="bio__icons flex-between width-1 margin-auto">
-                    <img src="./images/shape.svg" alt="twitter">
-                    <img src="./images/shape-Be.svg" alt="shapebe">
-                    <img src="./images/instagram.svg" alt="instagram">
+                    <img src="./images/shape.svg" alt="twitter" width="17" height="14">
+                    <img src="./images/shape-Be.svg" alt="shapebe" width="21" height="13">
+                    <img src="./images/instagram.svg" alt="instagram" width="16" height="16">
                 </div>
             </div>
         </header>
         <main>
             <!-- works section -->
             <section class="works mb-5">
-                <h3 class="works__title title">WORKS</h3>
+                <h2 class="works__title title">WORKS</h2>
                 <div class="works__articles">
                     <article class="works__article-1 width-8 left-article mb-3">
                         <div>
                             <button class="featured">Featured</button>
-                            <h6 class="white font-lg bold-lg width-4 ls-2">Motivation Is The First
-                                Step To Success</h6>
+                            <p class="white font-lg bold-lg width-4 ls-2">Motivation Is The First
+                                Step To Success</p>
                         </div>
                     </article>
                     <article class="works__article-2 width-8 right-article mb-3">
-                        <h6 class="white font-lg bold-lg width-4 ls-2">How Great Is The Strength Of Your Belief</h6>
+                        <p class="white font-lg bold-lg width-4 ls-2">How Great Is The Strength Of Your Belief</p>
                     </article>
                     <article class="works__article-3 width-8 left-article">
-                        <h6 class="white font-lg bold-lg width-4 ls-2">Benjamin Franklin S Method Of Habit Formation
-                        </h6>
+                        <p class="white font-lg bold-lg width-4 ls-2">Benjamin Franklin S Method Of Habit Formation
+                        </p>
                     </article>
                     <article class="works__article-4 width-8 right-article">
                         <div>
                             <button class="featured">Featured</button>
-                            <h6 class="white font-lg bold-lg width-4 ls-2">Increasing Prosperity With Positive Thinking
-                            </h6>
+                            <p class="white font-lg bold-lg width-4 ls-2">Increasing Prosperity With Positive Thinking
+                            </p>
                         </div>
                     </article>
                 </div>
             </section>
             <!-- About section -->
-            <section class="about mb-3">
-                <h3 class="about__title title">ABOUT</h3>
+            <section class="about">
+                <h2 class="about__title title">ABOUT</h2>
                 <div class="about__articles flex-between">
                     <article class="width-8 mb-3">
                         <h2 class="font-lg bold-md mb-1 lh-4">UX/UI</h2>
-                        <p class="width-6 font-md bold-md lh-3">Of course, motivation really <span
-                                class="res-blue">isn’t simple at
+                        <p class="width-6 font-md bold-md lh-3">Of course, motivation really <span class="blue">isn’t
+                                simple at
                                 all</span> . That
                             is why
                             there is
@@ -102,12 +113,14 @@
                             with our bodies,
                             nature,
                             and
-                            the power of prayer. <span class="none">There seems to be a spiritual renaissance, of sorts,
+                            the power of prayer. <span class="show">There seems to be a spiritual renaissance,
+                                of
+                                sorts,
                                 going on in
                                 the
                                 “new
                                 age”
-                                movement.</span> <span class="blue show"> see more...</span></p>
+                                movement.</span> <span class="blue none"> see more...</span></p>
                     </article>
                     <article class="width-8 mb-3">
                         <h2 class="font-lg bold-md mb-1 lh-4">Branding</h2>
@@ -116,7 +129,7 @@
                             demotivated
                             about life, try to
                             inspire
-                            him/her as much as you can. <span class="none">
+                            him/her as much as you can. <span class="show">
                                 Even if you are physically away from your friend you can
                                 send
                                 him
@@ -124,7 +137,7 @@
                                 So
                                 motivate
                                 everyone who needs the boost.
-                            </span><span class="blue show"> see more...</span></p>
+                            </span><span class="blue none"> see more...</span></p>
                     </article>
                     <article class="width-8 mb-3">
                         <h2 class="font-lg bold-md mb-1 lh-4">Development</h2>
@@ -133,54 +146,54 @@
                             are;
                             however, a lack of religion
                             does
-                            seem to run parallel with depression. <span class="none">
+                            seem to run parallel with depression. <span class="show">
                                 This is classified as spiritual illness, which will
                                 have a
                                 negative effect on you mentally, physically, or totally.
-                            </span> <span class="blue show"> see
+                            </span> <span class="blue none"> see
                                 more...</span></p>
                     </article>
                 </div>
             </section>
-            <section class="branding mb-5">
+            <div class="branding mb-5">
                 <div class="branding__icons flex-between width-10">
-                    <img src="./images/google.svg" alt="google logo">
-                    <img src="./images/airbnb.svg" alt="airbnb logo">
-                    <img src="./images/dropbox.svg" alt="dropbox logo">
+                    <img src="./images/google.svg" alt="google logo" width="129" height="43">
+                    <img src="./images/airbnb.svg" alt="airbnb logo" width="138" height="43">
+                    <img src="./images/dropbox.svg" alt="dropbox logo" width="44" height="43">
                 </div>
-            </section>
+            </div>
             <section class="links mb-5">
-                <h3 class="links__title title">LINKS</h3>
+                <h2 class="links__title title">LINKS</h2>
                 <div class="links__container flex-between">
                     <div class="width-8 flex-between mb-1">
-                        <a href="" class="blue font-md bold-md lh-3">Harness The Power Of Words In Your Life</a>
+                        <a href="#nav-list" class="blue font-md bold-md lh-3">Harness The Power Of Words In Your Life</a>
                         <p class="gray font-md bold-md lh-3">2018</p>
                     </div>
                     <div class="width-8 flex-between mb-1">
-                        <a href="" class="blue font-md bold-md lh-3">A Starter Guide To Self Improvement</a>
+                        <a href="#nav-list" class="blue font-md bold-md lh-3">A Starter Guide To Self Improvement</a>
                         <p class="gray font-md bold-md lh-3">2018</p>
                     </div>
                     <div class="width-8 flex-between mb-1">
-                        <a href="" class="blue font-md bold-md lh-3">Benjamin Franklin S Method Of Habit Formation</a>
+                        <a href="#nav-list" class="blue font-md bold-md lh-3">Benjamin Franklin S Method Of Habit Formation</a>
                         <p class="gray font-md bold-md lh-3">2018</p>
                     </div>
 
                     <div class="width-8 flex-between mb-1">
-                        <a href="" class="blue font-md bold-md lh-3">Does Your Life Lack Meaning</a>
+                        <a href="#nav-list" class="blue font-md bold-md lh-3">Does Your Life Lack Meaning</a>
                         <p class="gray font-md bold-md lh-3">2018</p>
                     </div>
                     <div class="width-8 flex-between mb-1">
-                        <a href="" class="blue font-md bold-md lh-3">Hypnotize Yourself Into The Ghost Of Christmas
+                        <a href="#nav-list" class="blue font-md bold-md lh-3">Hypnotize Yourself Into The Ghost Of Christmas
                             Future</a>
                         <p class="gray font-md bold-md lh-3">2017</p>
                     </div>
                     <div class="width-8 flex-between mb-1">
-                        <a href="" class="blue font-md bold-md lh-3">Hypnotize Yourself Into The Ghost Of Christmas
+                        <a href="#nav-list" class="blue font-md bold-md lh-3">Hypnotize Yourself Into The Ghost Of Christmas
                             Future</a>
                         <p class="gray font-md bold-md lh-3">2016</p>
                     </div>
                     <div class="width-8 flex-between mb-1">
-                        <a href="" class="blue font-md bold-md lh-3">Self Motivation How To Keep Yourself Motivated</a>
+                        <a href="#nav-list" class="blue font-md bold-md lh-3">Self Motivation How To Keep Yourself Motivated</a>
                         <p class="gray font-md bold-md lh-3">2016</p>
                     </div>
                 </div>
@@ -190,27 +203,27 @@
     <footer>
         <div class="footer_container flex-between mb-5" style="margin-bottom: 120px;">
             <div class="contact width-3">
-                <h4 class="font-lg bold-md mb-3 lh-4">Contacts</h4>
+                <h2 class="font-lg bold-md mb-3 lh-4">Contacts</h2>
                 <p class="font-md bold-md mb-1 lh-3">Positive pleasure-oriented goals are much more powerful
                     motivators
                     than
                     negative
                     fear-based ones.</p>
-                <div class="width-1 bio__icons">
-                    <img src="./images/shape.svg" alt="twitter">
-                    <img src="./images/shape-Be.svg" alt="shapebe">
-                    <img src="./images/instagram.svg" alt="instagram">
+                <div class="bio__icons flex-between width-1">
+                    <img src="./images/shape.svg" alt="twitter" width="17" height="14">
+                    <img src="./images/shape-Be.svg" alt="shapebe" width="21" height="13">
+                    <img src="./images/instagram.svg" alt="instagram" width="16" height="16">
                 </div>
             </div>
             <div class="contact-form width-13">
-                <form action="" class="flex-between">
+                <form action="GET" class="flex-between">
                     <div class="width-12">
-                        <label for="name" class="font-sm bold-xl ls-3">NAME</label>
-                        <input type="text" id="name" class="mb-1" placeholder="icognito">
-                        <label for="name" class="font-sm bold-xl ls-3">E-MAIL</label>
-                        <input type="text" id="name" class="mb-1" placeholder="icognito@gmail.com">
-                        <label for="name" class="font-sm bold-xl ls-3">MESSAGE</label>
-                        <input type="text" id="name" class="mb-1" placeholder="Your question or suggestion">
+                        <label for="name" class="font-sm bold-xl ls-3" style="margin-bottom: 12px;">NAME</label>
+                        <input type="text" id="name"  placeholder="incognito">
+                        <label for="email" class="font-sm bold-xl ls-3"  style="margin-bottom: 12px;">E-MAIL</label>
+                        <input type="text" id="email"  placeholder="incognito@gmail.com">
+                        <label for="message" class="font-sm bold-xl ls-3"  style="margin-bottom: 12px;">MESSAGE</label>
+                        <input type="text" id="message"  placeholder="Your question or suggestion">
                     </div>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" fill="#cfcfcf"
@@ -221,6 +234,7 @@
                     </div>
                 </form>
             </div>
+
         </div>
         <div class="copyrights flex-between">
             <p class="width-5 font-md font-res-sm bold-md lh-3">Copyright © 2018 Denis Abdullin – deab.ru</p>
@@ -228,11 +242,9 @@
                 <p>Invoicing</p>
                 <p>Documents</p>
             </div>
-
         </div>
     </footer>
     <script src="./app.js"></script>
-
 </body>
 
 </html>
